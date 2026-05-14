@@ -2,144 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beardman Consulting Group</title>
 
   <style>
-    body{
-      margin:0;
-      font-family:Arial, sans-serif;
-      background:#111;
-      color:white;
-      line-height:1.6;
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f1115;
+      color: #ffffff;
+      line-height: 1.6;
     }
 
-    header{
-      padding:80px 20px;
-      text-align:center;
-      background:#1a1a1a;
+    header {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #0f1115, #182033);
     }
 
-    h1{
-      font-size:48px;
-      margin-bottom:10px;
+    .logo {
+      width: 240px;
+      max-width: 80%;
+      margin-bottom: 30px;
+      border-radius: 8px;
     }
 
-    .tagline{
-      font-size:20px;
-      color:#bbb;
+    h1 {
+      font-size: 48px;
+      margin: 10px 0;
+      letter-spacing: 1px;
     }
 
-    section{
-      padding:60px 20px;
-      max-width:1000px;
-      margin:auto;
+    .tagline {
+      font-size: 20px;
+      color: #d0d4dc;
+      max-width: 800px;
+      margin-bottom: 30px;
     }
 
-    h2{
-      font-size:32px;
-      margin-bottom:20px;
-      border-bottom:2px solid #333;
-      padding-bottom:10px;
+    .button {
+      display: inline-block;
+      background: #ffffff;
+      color: #0f1115;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    .services{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:20px;
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
     }
 
-    .card{
-      background:#1e1e1e;
-      padding:25px;
-      border-radius:12px;
+    h2 {
+      font-size: 34px;
+      margin-bottom: 20px;
+      color: #ffffff;
     }
 
-    footer{
-      text-align:center;
-      padding:40px 20px;
-      background:#1a1a1a;
-      color:#888;
+    p {
+      color: #d0d4dc;
+      font-size: 18px;
     }
 
-    .button{
-      display:inline-block;
-      margin-top:25px;
-      padding:14px 28px;
-      background:white;
-      color:black;
-      text-decoration:none;
-      border-radius:8px;
-      font-weight:bold;
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #181c25;
+      padding: 28px;
+      border-radius: 14px;
+      border: 1px solid #2b3242;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      background: #090b0f;
+      color: #888;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Beardman Consulting Group</h1>
+  <header>
+    <img src="beardman-logo.jpeg" alt="Beardman Consulting Group Logo" class="logo" />
 
-  <p class="tagline">
-    Property Loss • Reconstruction • Estimating • Commercial Roofing Consulting
-  </p>
+    <h1>Beardman Consulting Group</h1>
 
-  <a class="button" href="mailto:youremail@email.com">
-    Contact Us
-  </a>
-</header>
+    <p class="tagline">
+      Property Loss • Reconstruction • Estimating • Commercial Roofing Consulting
+    </p>
 
-<section>
-  <h2>About</h2>
+    <a class="button" href="mailto:brian@beardmanbuilding.com">Contact Brian</a>
+  </header>
 
-  <p>
-    Beardman Consulting Group provides consulting services for property loss,
-    reconstruction estimating, commercial roofing, and insurance-related scope development.
-    With extensive experience in roofing, storm restoration, Xactimate estimating,
-    and project consulting, we help property owners and contractors navigate
-    complex projects with clarity and confidence.
-  </p>
-</section>
+  <section>
+    <h2>Experienced Property & Reconstruction Consulting</h2>
+    <p>
+      Beardman Consulting Group provides professional consulting services for property loss,
+      roofing, reconstruction estimating, scope development, and insurance-related project support.
+      We help property owners, contractors, and industry professionals make sense of complex
+      damage, estimating, and restoration situations.
+    </p>
+  </section>
 
-<section>
-  <h2>Services</h2>
+  <section>
+    <h2>Services</h2>
 
-  <div class="services">
+    <div class="services">
+      <div class="card">
+        <h3>Estimate Review</h3>
+        <p>Professional review of roofing, restoration, and reconstruction estimates.</p>
+      </div>
 
-    <div class="card">
-      <h3>Estimate Review</h3>
-      <p>
-        Professional review of roofing and reconstruction estimates.
-      </p>
+      <div class="card">
+        <h3>Scope Development</h3>
+        <p>Detailed project scope support for residential, commercial, and storm-related losses.</p>
+      </div>
+
+      <div class="card">
+        <h3>Commercial Roofing Consulting</h3>
+        <p>Consulting support for commercial roofing systems, documentation, and project planning.</p>
+      </div>
+
+      <div class="card">
+        <h3>Insurance Claim Support</h3>
+        <p>Support with documentation, estimating, and claim-related project organization.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Scope Development</h3>
-      <p>
-        Detailed project scope creation for residential and commercial properties.
-      </p>
-    </div>
+  <section>
+    <h2>Why Beardman Consulting Group?</h2>
+    <p>
+      With years of hands-on experience in roofing, construction, storm restoration,
+      Xactimate estimating, supplements, and project consulting, Beardman Consulting Group
+      brings real-world field knowledge and professional estimating insight to every project.
+    </p>
+  </section>
 
-    <div class="card">
-      <h3>Commercial Roofing Consulting</h3>
-      <p>
-        Consulting support for commercial roofing systems and restoration projects.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Insurance Claim Support</h3>
-      <p>
-        Assistance with documentation and estimating support for property loss claims.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  Beardman Consulting Group © 2026
-</footer>
+  <footer>
+    Beardman Consulting Group © 2026
+  </footer>
 
 </body>
 </html>
