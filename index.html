@@ -30,6 +30,8 @@
       max-width: 80%;
       margin-bottom: 30px;
       border-radius: 8px;
+      background: #fff;
+      padding: 10px;
     }
 
     h1 {
@@ -53,6 +55,13 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      margin: 8px;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid #ffffff;
     }
 
     section {
@@ -64,7 +73,6 @@
     h2 {
       font-size: 34px;
       margin-bottom: 20px;
-      color: #ffffff;
     }
 
     p {
@@ -91,11 +99,35 @@
       color: #ffffff;
     }
 
+    .contact-box {
+      background: #181c25;
+      border: 1px solid #2b3242;
+      border-radius: 14px;
+      padding: 30px;
+      margin-top: 25px;
+    }
+
+    .contact-box a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     footer {
       text-align: center;
       padding: 35px 20px;
       background: #090b0f;
       color: #888;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      .tagline {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
@@ -111,7 +143,10 @@
       Property Loss • Reconstruction • Estimating • Commercial Roofing Consulting
     </p>
 
-    <a class="button" href="mailto:brian@beardmanbuilding.com">Contact Brian</a>
+    <div>
+      <a class="button" href="mailto:brian@beardmanbuilding.com">Email Brian</a>
+      <a class="button secondary" href="tel:7043505471">Call Now</a>
+    </div>
   </header>
 
   <section>
@@ -120,7 +155,7 @@
       Beardman Consulting Group provides professional consulting services for property loss,
       roofing, reconstruction estimating, scope development, and insurance-related project support.
       We help property owners, contractors, and industry professionals make sense of complex
-      damage, estimating, and restoration situations.
+      damage, estimating, restoration, and dispute situations.
     </p>
   </section>
 
@@ -147,13 +182,23 @@
         <h3>Insurance Claim Support</h3>
         <p>Support with documentation, estimating, and claim-related project organization.</p>
       </div>
-    </div><div class="card">
-  <h3>Dispute Resolution Support</h3>
-  <p>
-    Consulting support for mediation, appraisal preparation,
-    scope analysis, estimate review, and property damage dispute documentation.
-  </p>
-</div>
+
+      <div class="card">
+        <h3>Dispute Resolution Support</h3>
+        <p>
+          Consulting support for mediation, appraisal preparation, scope analysis,
+          estimate review, and property damage dispute documentation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Xactimate Estimate Support</h3>
+        <p>
+          Support with Xactimate-based estimating, supplements, line-item review,
+          and reconstruction scope organization.
+        </p>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -163,6 +208,17 @@
       Xactimate estimating, supplements, and project consulting, Beardman Consulting Group
       brings real-world field knowledge and professional estimating insight to every project.
     </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+
+    <div class="contact-box">
+      <p><strong>Beardman Consulting Group</strong></p>
+      <p>Email: <a href="mailto:brian@beardmanbuilding.com">brian@beardmanbuilding.com</a></p>
+      <p>Phone: <a href="tel:YOUR-PHONE-NUMBER">7043505471</a></p>
+      <p>Address: 7122 Bidford Court, Fort Mill, SC 29707</p>
+    </div>
   </section>
 
   <footer>
